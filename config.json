@@ -1,0 +1,21 @@
+{
+  "params":
+  {
+    "local_server":"True",
+    "local_uri": "mysql://root:@localhost/fitnessGuide",
+    "prod_uri":"mysql://root:@localhost/fitnessGuide",
+    "fb_url":"https://facebook.com/angadpreetmalhi",
+    "tw_url":"https://twitter.com/angadpreetmalhi",
+    "gh_url": "https://github.com/angadpreetmalhi",
+    "blog_name": "Fitness Guide",
+    "tag_line": "Healthy body Healthy life",
+    "no_of_posts": 2,
+    "login_image":"login.svg",
+    "admin_user":"angad",
+    "admin_password": "preet",
+    "upload_location":"E:\\codewith"
+
+
+  }
+
+}
