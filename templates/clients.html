@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <!-- Page Header -->
+      <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/clients-bg.jpg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>Record of Clients</h1>
+              <span class="subheading">One must eat to live, not live to eat.
+                <span style="font-style:italic;font-size:60%;">-Jean-Baptiste Poquelinspan</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Record all your workout and diet plan</p>
+
+          <form name="record" id="clientForm" action = "/clients" method="post" novalidate>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Name" id="name" name='name' required data-validation-required-message="Please enter your name.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>Weight</label>
+                <input type="tel" class="form-control" placeholder="Weight in Pounds" name="weight" id="weight" required data-validation-required-message="Please enter your Weight">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Weekly Diet Plan</label>
+                <textarea rows="5" class="form-control" placeholder="Diet Plan" name = "diet" id="diet" required data-validation-required-message="Please enter your Diet Plan."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Weekly Workout</label>
+                <textarea rows="5" class="form-control" placeholder="Workout" name = "workout" id="workout" required data-validation-required-message="Please enter your Workout."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+
+            <br>
+            <div id="success"></div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary" id="sendMessageButton">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+   {% endblock %}

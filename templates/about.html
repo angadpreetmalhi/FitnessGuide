@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/about-bg.jpg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>About Me</h1>
+              <span class="subheading">Fitness Trainer.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+        <ul>
+	<li>Fitness Manager</li>
+	<li>NCCP level 1 Coach</li>
+	<li>Studied Sport Performance at BcT College</li>
+	<li>Sport Specific Training</li>
+	<li>NashFit level 1</li>
+	<li>Strength and Weight Training</li>
+	<li>CPR / First Aid</li>
+	<li>Dotfit</li>
+    <li>All above higlights are just for Example</li>
+</ul>
+        </div>
+      </div>
+    </div>
+
+   {% endblock %}
